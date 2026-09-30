@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Grade Horária Pós-Trancamento</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #004a8f;
+        }
+        .info-creditos {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+            width: 16.66%;
+        }
+        th {
+            background-color: #004a8f;
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+        /* Classes de Status das Matérias */
+        .mantida {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            font-weight: 500;
+        }
+        .trancada {
+            background-color: #f5f5f5;
+            color: #9e9e9e;
+            text-decoration: line-through;
+        }
+        .livre {
+            background-color: #e3f2fd;
+            color: #1565c0;
+            font-weight: bold;
+            border: 2px dashed #90caf9;
+        }
+        .nova {
+            background-color: #fff3e0;
+            color: #ef6c00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grade Horária - Planejamento</h1>
+    <div class="info-creditos">Créditos Atuais: 15 (Mínimo exigido: 12)</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+                <th>Sexta-feira</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08h00 - 10h00</td>
+                <td class="trancada">Dentística Pré-Clínica I<br><small>(Cancelada por conj.)</small></td>
+                <td class="trancada">Radiologia Odonto. Básica<br><small>(Cancelada por conj.)</small></td>
+                <td class="trancada">Materiais Odonto. I<br><small>(Cancelada por conj.)</small></td>
+                <td class="mantida">Patologia Básica</td>
+                <td class="mantida">Bioquímica Bucal</td>
+            </tr>
+            <tr>
+                <td>10h00 - 12h00</td>
+                <td class="mantida">Microbiologia</td>
+                <td class="trancada">Morfologia da Cabeça e Pescoço<br><small>(Trancamento Principal)</small></td>
+                <td class="trancada">Materiais Odonto. I</td>
+                <td class="mantida">Microbiologia</td>
+                <td class="mantida">Atividade Prática / A ou B</td>
+            </tr>
+            <tr>
+                <td>14h00 - 16h00</td>
+                <td class="mantida">Fisiologia Aplicada I</td>
+                <td class="trancada">Morfologia da Cabeça e Pescoço</td>
+                <td class="mantida">Atenção Primária à Saúde I</td>
+                <td class="trancada">Radiologia Odonto. Básica</td>
+                <td class="livre">Horário Livre</td>
+            </tr>
+            <tr>
+                <td>16h15 - 18h15</td>
+                <td class="mantida">Fisiologia Aplicada I</td>
+                <td class="trancada">Morfologia da Cabeça e Pescoço</td>
+                <td class="mantida">Atenção Primária à Saúde I</td>
+                <td class="mantida">Patologia Básica</td>
+                <td class="livre">Horário Livre</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
